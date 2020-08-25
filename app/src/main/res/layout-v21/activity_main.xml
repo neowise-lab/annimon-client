@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F4F4F4">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@drawable/toolbar_background">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:gravity="center_vertical">
+
+                    <ImageView android:layout_width="35dp"
+                               android:layout_height="35dp"
+                               android:src="@drawable/ic_annimon_logo"
+                               android:padding="5dp"
+                                app:tint = "@color/colorPrimaryText" />
+
+                    <TextView android:id="@+id/app_title"
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:text="@string/app_name"
+                              android:textColor="@color/colorPrimaryText"
+                              android:fontFamily="@font/montserrat_medium"
+                              android:textSize="16sp"
+                              android:gravity="center_vertical"
+                              android:layout_marginStart="10dp"/>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:id="@+id/chats_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:background="@drawable/toolbar_button_ripple"
+                            android:gravity="center_vertical">
+                        <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_chats"
+                                android:padding="5dp"
+                                app:tint = "@color/colorPrimaryText" />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/chats"
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_marginStart="5dp"
+                        />
+                    </LinearLayout>
+                </LinearLayout>
+            </Toolbar>
+            <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="-3dp"
+                    android:indeterminate="true"
+                    style="?android:progressBarStyleHorizontal"
+            />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar_layout"
+            android:layout_above="@+id/bottom_menu"/>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cnb_iconSize="25dp"
+            android:elevation="10dp"
+            app:cnb_menuResource="@menu/cheap_menu"
+            app:cnb_textAppearance="@style/NavigationTextAppearance"
+            app:cnb_unselectedColor="@color/unselectedMenu"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+    />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:padding="40dp">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            style="@style/TitleTextView"
+    />
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/annimon_logo"
+            android:layout_marginTop="30dp"
+    />
+
+    <EditText
+            android:id="@+id/token_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:hint="@string/input_token"
+            style="@style/EditText"
+    />
+    <Button
+            android:id="@+id/login_btn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/login"
+            android:stateListAnimator="@null"
+            style="@style/PrimaryButton"
+    />
+    <Button
+            android:id="@+id/login_as_guest_btn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/login_as_guest"
+            android:stateListAnimator="@null"
+            style="@style/SecondaryButton"
+    />
+</LinearLayout>

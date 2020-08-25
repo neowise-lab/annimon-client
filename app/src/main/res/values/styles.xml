@@ -1,0 +1,83 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorAccent">@color/colorAccent</item>
+	</style>
+
+	<style name="EditText">
+		<item name="android:background">@drawable/edit_text_bg</item>
+		<item name="android:padding">15dp</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+	<style name="PrimaryButton">
+		<item name="android:background">@drawable/active_button_ripple</item>
+		<item name="android:padding">15dp</item>
+		<item name="android:textSize">14sp</item>
+		<item name="fontFamily">@font/montserrat_medium</item>
+		<item name="textAllCaps">false</item>
+		<item name="android:textColor">#ffff</item>
+	</style>
+	<style name="SecondaryButton" parent="PrimaryButton">
+		<item name="android:background">@drawable/secondary_button_ripple</item>
+		<item name="android:padding">15dp</item>
+		<item name="android:textSize">14sp</item>
+		<item name="fontFamily">@font/montserrat_medium</item>
+		<item name="textAllCaps">false</item>
+		<item name="android:textColor">#ffff</item>
+	</style>
+	<style name="TitleTextView">
+		<item name="android:textSize">26sp</item>
+		<item name="fontFamily">@font/montserrat_semibold</item>
+		<item name="android:textColor">@color/colorPrimaryText</item>
+	</style>
+	<style name="Toolbar">
+		<item name="android:background">#252525</item>
+		<item name="android:padding">15dp</item>
+		<item name="android:textSize">14sp</item>
+		<item name="fontFamily">@font/montserrat_medium</item>
+		<item name="textAllCaps">false</item>
+		<item name="android:textColor">#ffff</item>
+	</style>
+    <style name="NavigationTextAppearance">
+		<item name="android:textSize">15sp</item>
+	</style>
+    <style name="TextView">
+		<item name="android:textSize">16sp</item>
+		<item name="android:textColor">@color/colorPrimaryText</item>
+	</style>
+    <style name="TimeDateTextView">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">@color/secondaryColor</item>
+	</style>
+	<style name="PlainText">
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">@color/colorPrimaryText</item>
+	</style>
+	<style name="TagsText">
+		<item name="android:textSize">13sp</item>
+		<item name="android:padding">5dp</item>
+		<item name="android:textColor">#66BB6A</item>
+		<item name="android:background">#E8F5E9</item>
+	</style>
+	<style name="ForumCategoryTitle">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:padding">10dp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/secondaryColor</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+	<style name="ForumCategoryCard">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_margin">10dp</item>
+		<item name="android:padding">20dp</item>
+		<item name="cardCornerRadius">10dp</item>
+	</style>
+
+	<style name = "Username">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">@color/colorAccent</item>
+	</style>
+</resources>

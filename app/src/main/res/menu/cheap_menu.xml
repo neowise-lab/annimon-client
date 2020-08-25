@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/menu_home"
+            android:title="Главная"
+            android:icon="@drawable/ic_user"
+            android:checked="true"
+            app:cnb_iconColor="@color/colorAccent"/>
+    <item
+            android:id="@+id/menu_articles"
+            android:icon="@drawable/ic_article"
+            android:title="Статьи"
+            app:cnb_iconColor="@color/colorAccent"/>
+    <item
+            android:id="@+id/menu_albums"
+            android:icon="@drawable/ic_photo"
+            android:title="Альбомы"
+            app:cnb_iconColor="@color/colorAccent"/>
+
+    <item
+            android:id="@+id/menu_questions"
+            android:icon="@drawable/ic_question"
+            android:title="Вопросы"
+            app:cnb_iconColor="@color/colorAccent"/>
+
+    <item
+            android:id="@+id/menu_forum"
+            android:icon="@drawable/ic_chat"
+            android:title="Форум"
+            app:cnb_iconColor="@color/colorAccent"/>
+</menu>

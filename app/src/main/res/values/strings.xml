@@ -1,0 +1,16 @@
+<resources>
+	<string name="app_name">Annimon</string>
+    <string name="login">Вход</string>
+    <string name="input_token">Введите токен</string>
+    <string name="login_as_guest">Войти как Гость</string>
+    <string name="not_implemented">не реализовано</string>
+    <string name="java">Java</string>
+    <string name="artices_count">Articles: 27</string>
+    <string name="chats">Чаты</string>
+    <string name="zvers_if_setfullscreenmode_true">Zvers, Начнем с того зачем ты в главном классе Обрабатуеш вывод через
+        if? попробуй исправить походу на эти аргументы она и ругается! По том если мне память не изменяет полно экраный
+        режим по другому делается, а вот так ( setFullScreenMode(true);
+    </string>
+    <string name="next">След. стр</string>
+    <string name="prev">Пред.стр</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout2">
+
+        <LinearLayout
+                android:id="@+id/prev_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/ripple_oval"
+                android:layout_alignParentStart="true">
+
+            <ImageView
+                       android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:src="@drawable/ic_left"
+                       android:scaleType="fitCenter"
+                       android:padding="5dp"
+                    app:tint="@color/colorPrimaryText" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/prev"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/next_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/ripple_oval"
+                android:layout_alignParentEnd="true">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/next"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"/>
+            <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_right"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp" app:tint="@color/colorPrimaryText" />
+        </LinearLayout>
+    </RelativeLayout>

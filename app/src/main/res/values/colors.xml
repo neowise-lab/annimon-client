@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#ffffff</color>
+	<color name="colorPrimaryDark">#ffffff</color>
+	<color name="colorAccent">#42A5F5</color>
+	<color name="editorBackgroundColor">#E5E5E5</color>
+	<color name="activeColor">#42A5F5</color>
+    <color name="secondaryColor">#979797</color>
+	<color name="colorPrimaryText">#3C3F41</color>
+	<color name="unselectedMenu">#4D5153</color>
+    <color name="white">#ffffff</color>
+	<color name="grey">#bfbfbf</color>
+    <color name = "separatorColor">#E3E3E3</color>
+</resources>

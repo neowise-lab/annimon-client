@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mobile_content">Мобильный контент</string>
+    <string name="development">Разработка</string>
+    <string name="internet">Интернет/Коммерция</string>
+    <string name="mobile_devices">Мобильные устройства</string>
+    <string name="computer">Компьютеры</string>
+    <string name="communication">Общение</string>
+    <string name="about">О сайте</string>
+</resources>

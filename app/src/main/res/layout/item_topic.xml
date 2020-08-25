@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple"
+        android:clickable="true">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp">
+        <ImageView
+                android:id="@+id/forum_item_image"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_list"
+                app:tint="@color/colorPrimaryText" />
+        <TextView
+                android:id="@+id/forum_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Category Name"
+                android:textSize="14sp"
+                style="@style/TextView"/>
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/separatorColor"/>
+</LinearLayout>
