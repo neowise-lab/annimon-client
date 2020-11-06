@@ -9,11 +9,11 @@
         android:background="#F4F4F4">
 
     <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/post_recycler"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/item_post"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"/>
+        android:id="@+id/post_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_post" />
 </androidx.constraintlayout.widget.ConstraintLayout>

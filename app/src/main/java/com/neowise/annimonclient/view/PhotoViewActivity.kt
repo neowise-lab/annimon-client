@@ -30,9 +30,7 @@ class PhotoViewActivity : AppCompatActivity() {
             override fun onPageScrollStateChanged(state: Int) {}
 
             override fun onPageSelected(position: Int) {
-                photo_name.text = photoList.get(position).name
-                photo_text.text = photoList.get(position).text
-                indicator.text = "${position+1} из $photoCount"
+                initPhotoIndicators(position)
             }
         })
 
@@ -50,6 +48,14 @@ class PhotoViewActivity : AppCompatActivity() {
         }
     }
 
+    private fun initPhotoIndicators(position: Int) {
+        if (photoList.isEmpty()) return
+
+        photo_name.text = photoList[position].name
+        photo_text.text = photoList[position].text
+        indicator.text = "${(position + 1)} из $photoCount"
+    }
+
     private fun updateData(elems: List<Photo>?) {
         if (elems == null) return
         this.photoList = elems
@@ -57,5 +63,8 @@ class PhotoViewActivity : AppCompatActivity() {
         val viewPagerAdapter = ViewPagerAdapter(this, elems)
         view_pager.adapter = viewPagerAdapter
         view_pager.currentItem = 0
+
+        progress_bar.visibility = View.GONE
+        initPhotoIndicators(0)
     }
 }

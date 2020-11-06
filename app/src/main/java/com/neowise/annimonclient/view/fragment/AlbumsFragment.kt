@@ -69,13 +69,13 @@ class AlbumsFragment : Fragment() {
 
     private fun updateListData(data: List<Album>?) {
         if (data == null) {
-            Toast.makeText(activity, "Ошибка получения данных", Toast.LENGTH_SHORT)
+            Toast.makeText(activity, "Ошибка получения данных", Toast.LENGTH_SHORT).show()
         }
         else {
             albumAdapter.setItems(data)
         }
         albums_refresher?.isRefreshing = false
-
+        albums_recycler.scrollToPosition(0)
         showProgress(false)
     }
 
@@ -91,7 +91,6 @@ class AlbumsFragment : Fragment() {
             NavigationType.PREV -> -20
         }
         fetchData()
-        albums_recycler.scrollToPosition(0)
     }
 
     private fun showProgress(isShow: Boolean) {

@@ -3,6 +3,8 @@
 	<!-- Base application theme. -->
 	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
 		<item name="colorAccent">@color/colorAccent</item>
+		<item name="colorPrimary">@color/darkColor</item>
+		<item name="android:statusBarColor">@color/darkColor</item>
 	</style>
 
 	<style name="EditText">
@@ -78,6 +80,7 @@
 
 	<style name = "Username">
 		<item name="android:textSize">14sp</item>
+		<item name="android:textStyle">bold</item>
 		<item name="android:textColor">@color/colorAccent</item>
 	</style>
 </resources>

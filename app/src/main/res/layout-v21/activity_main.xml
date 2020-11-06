@@ -31,14 +31,14 @@
                                android:layout_height="35dp"
                                android:src="@drawable/ic_annimon_logo"
                                android:padding="5dp"
-                                app:tint = "@color/colorPrimaryText" />
+                                app:tint = "@color/white" />
 
                     <TextView android:id="@+id/app_title"
                               android:layout_width="0dp"
                               android:layout_height="match_parent"
                               android:layout_weight="1"
                               android:text="@string/app_name"
-                              android:textColor="@color/colorPrimaryText"
+                              android:textColor="@color/white"
                               android:fontFamily="@font/montserrat_medium"
                               android:textSize="16sp"
                               android:gravity="center_vertical"
@@ -57,13 +57,13 @@
                                 android:layout_height="30dp"
                                 android:src="@drawable/ic_chats"
                                 android:padding="5dp"
-                                app:tint = "@color/colorPrimaryText" />
+                                app:tint = "@color/white" />
                         <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text="@string/chats"
                                 android:gravity="center"
-                                android:textColor="@color/colorPrimaryText"
+                                android:textColor="@color/white"
                                 android:layout_marginStart="5dp"
                         />
                     </LinearLayout>

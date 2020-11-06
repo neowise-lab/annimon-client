@@ -54,11 +54,12 @@ class QuestionsFragment : Fragment() {
 
     private fun updateListData(data: List<Question>?) {
         if (data == null)
-            Toast.makeText(activity, "Ошибка получения данных", Toast.LENGTH_SHORT)
+            Toast.makeText(activity, "Ошибка получения данных", Toast.LENGTH_SHORT).show()
         else
             questionAdapter.setItems(data)
 
         question_refresher?.isRefreshing = false
+        questions_recycler.scrollToPosition(0)
         showProgress(false)
     }
 
@@ -85,7 +86,6 @@ class QuestionsFragment : Fragment() {
             NavigationType.PREV -> -20
         }
         fetchData()
-        questions_recycler.scrollToPosition(0)
     }
 
     private fun showProgress(isShow: Boolean) {

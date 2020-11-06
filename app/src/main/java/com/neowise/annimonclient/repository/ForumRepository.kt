@@ -33,7 +33,7 @@ object ForumRepository {
         val rootJson = JSONObject(JSONTokener(json))
         val jsonArray = rootJson.getJSONArray("topics")
 
-        for (i in 0..jsonArray.length()-1) {
+        for (i in 0 until jsonArray.length()) {
             val jsonObject = jsonArray.getJSONObject(i)
             val id = jsonObject.getString("topic")
             val name = jsonObject.getString("title")

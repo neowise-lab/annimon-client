@@ -1,6 +1,5 @@
 package com.neowise.annimonclient.repository
 
-import android.util.Log
 import com.neowise.annimonclient.model.Album
 import com.neowise.annimonclient.model.Photo
 import okhttp3.OkHttpClient
@@ -61,8 +60,7 @@ object AlbumsRepository {
                 .build()
             val response = client.newCall(request).execute()
             val json = response.body!!.string()
-            val parse = parsePhotos(json)
-            return parse
+            return parsePhotos(json)
         }
         catch (e: Exception) {
             e.printStackTrace()

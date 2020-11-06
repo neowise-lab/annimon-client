@@ -6,6 +6,7 @@
 	<color name="editorBackgroundColor">#E5E5E5</color>
 	<color name="activeColor">#42A5F5</color>
     <color name="secondaryColor">#979797</color>
+	<color name="darkColor">#272727</color>
 	<color name="colorPrimaryText">#3C3F41</color>
 	<color name="unselectedMenu">#4D5153</color>
     <color name="white">#ffffff</color>
