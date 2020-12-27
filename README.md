@@ -2,6 +2,8 @@
 
 Клиентское приложение для сайта Annimon.com
 
+![](screenshots/preview.png)
+
 ## Скачать APK сборку
 
 [Сборка 0.1](debug_bundles/annimonclient-debug-0.1.apk)
